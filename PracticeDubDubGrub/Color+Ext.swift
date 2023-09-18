@@ -5,4 +5,8 @@
 //  Created by Mitch Andrade on 9/18/23.
 //
 
-import Foundation
+import SwiftUI
+
+extension Color {
+    static let brandPrimary = Color("brandPrimary")
+}
