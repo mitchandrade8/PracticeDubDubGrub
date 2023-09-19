@@ -16,7 +16,7 @@ struct AppTabView: View {
                 }
             LocationListView()
                 .tabItem {
-                    Label("Locations", systemImage: "mappin.circle.fill")
+                    Label("Locations", systemImage: "building")
                 }
             ProfileView()
                 .tabItem {
