@@ -10,8 +10,20 @@ import SwiftUI
 struct AppTabView: View {
     var body: some View {
         TabView {
-            
+            LocationMapView()
+                .tabItem {
+                    Label("Map", systemImage: "map")
+                }
+            LocationListView()
+                .tabItem {
+                    Label("Locations", systemImage: "mappin.circle.fill")
+                }
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person")
+                }
         }
+        .accentColor(.brandPrimary)
     }
 }
 
