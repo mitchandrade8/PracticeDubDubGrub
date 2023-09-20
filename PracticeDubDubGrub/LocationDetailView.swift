@@ -35,8 +35,6 @@ struct LocationDetailView: View {
             
             Text("It is Chipotle. Enough said.")
             
-           
-            
             HStack(spacing: 20) {
                 Button(action: {}, label: {
                     Image(systemName: "location.circle.fill")
@@ -63,14 +61,23 @@ struct LocationDetailView: View {
                 })
                 
                 Button(action: {}, label: {
-                    Image(systemName: "location.circle.fill")
+                    Image(systemName: "person.crop.circle.fill.badge.xmark")
                         .resizable()
                         .scaledToFit()
                         .frame(height: 60)
+                        .foregroundColor(.brandPrimary)
                 })
             }
             
             Spacer()
+            
+            Section {
+                List {
+                    
+                }
+            } header: {
+                Text("Who is here???")
+            }
         }
             
     }
