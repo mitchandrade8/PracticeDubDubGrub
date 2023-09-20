@@ -27,23 +27,8 @@ struct LocationListView: View {
                                 .minimumScaleFactor(0.75)
                             
                             HStack {
-                                Image("default-avatar")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 35)
-                                    .clipShape(Circle())
+                                AvatarView()
                                 
-                                Image("default-avatar")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 35)
-                                    .clipShape(Circle())
-                                
-                                Image("default-avatar")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 35)
-                                    .clipShape(Circle())
                             }
                         }
                     }
@@ -66,3 +51,13 @@ struct LocationListView: View {
 //}
 
 
+
+struct AvatarView: View {
+    var body: some View {
+        Image("default-avatar")
+            .resizable()
+            .scaledToFit()
+            .frame(height: 35)
+            .clipShape(Circle())
+    }
+}
