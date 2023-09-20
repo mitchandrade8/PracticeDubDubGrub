@@ -34,12 +34,15 @@ struct LocationDetailView: View {
 //                            .foregroundColor(.secondary)
                         
                     }
-                    
+                    .padding()
                     
                 }
                 .padding(.bottom, 40)
                 
                 Text("It is Chipotle. Enough said.")
+                    .lineLimit(3)
+                    .minimumScaleFactor(0.75)
+                    .padding(.horizontal)
                 
                 HStack(spacing: 20) {
                     Button(action: {}, label: {
