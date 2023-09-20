@@ -11,9 +11,21 @@ struct LocationListView: View {
     var body: some View {
         NavigationView {
             List {
-                LocationViewPic(image: Image(systemName: "shippingbox.circle"))
+                ForEach(0..<10) { item in
+                    HStack {
+                        Image("default-square-asset")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 80)
+                            .clipShape(Circle())
+                        
+                        Text("Location")
+                            .font(.system(size: 32, weight: .regular, design: .serif))
+                    }
+                }
             }
             .listStyle(PlainListStyle())
+            .navigationTitle("Grub spots")
         }
     }
 }
@@ -22,12 +34,10 @@ struct LocationListView: View {
     LocationListView()
 }
 
-struct LocationViewPic: View {
-    typealias Body = <#type#>
-    
-    var image: Image?
-    var locationName: String?
-    
-}
+//struct LocationViewPic: View {
+//    var image: Image?
+//    var locationName: String?
+//    
+//}
 
 
