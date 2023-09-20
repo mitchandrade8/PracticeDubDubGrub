@@ -21,16 +21,20 @@ struct LocationListView: View {
                             .padding(.vertical, 6)
                         
                         VStack(alignment: .leading) {
-                            Text("Location")
+                            Text("Test Location")
                                 .font(.system(size: 32, weight: .thin, design: .serif))
                                 .lineLimit(1)
                                 .minimumScaleFactor(0.75)
                             
                             HStack {
                                 AvatarView()
-                                
+                                AvatarView()
+                                AvatarView()
+                                AvatarView()
+                                AvatarView()
                             }
                         }
+                        .padding(.leading)
                     }
                 }
             }
@@ -44,13 +48,12 @@ struct LocationListView: View {
     LocationListView()
 }
 
+/// I did not create mock data and then extract a subview, see where i went different about making my UI then SA
 //struct LocationViewPic: View {
 //    var image: Image?
 //    var locationName: String?
 //    
 //}
-
-
 
 struct AvatarView: View {
     var body: some View {
