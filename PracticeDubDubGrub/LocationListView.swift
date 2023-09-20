@@ -9,10 +9,25 @@ import SwiftUI
 
 struct LocationListView: View {
     var body: some View {
-        Text("Location List")
+        NavigationView {
+            List {
+                LocationViewPic(image: Image(systemName: "shippingbox.circle"))
+            }
+            .listStyle(PlainListStyle())
+        }
     }
 }
 
 #Preview {
     LocationListView()
 }
+
+struct LocationViewPic: View {
+    typealias Body = <#type#>
+    
+    var image: Image?
+    var locationName: String?
+    
+}
+
+
