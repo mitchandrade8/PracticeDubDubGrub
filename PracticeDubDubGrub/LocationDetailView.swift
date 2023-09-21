@@ -44,38 +44,44 @@ struct LocationDetailView: View {
                     .minimumScaleFactor(0.75)
                     .padding(.horizontal)
                 
-                HStack(spacing: 20) {
-                    Button(action: {}, label: {
-                        Image(systemName: "location.circle.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 60)
-                            .foregroundColor(.brandPrimary)
-                    })
+                ZStack {
+                    Capsule()
+                        .frame(height: 75)
+                        .foregroundColor(Color(.secondarySystemBackground))
                     
-                    Button(action: {}, label: {
-                        Image(systemName: "network")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 60)
-                            .foregroundColor(.brandPrimary)
-                    })
-                    
-                    Button(action: {}, label: {
-                        Image(systemName: "phone.circle.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 60)
-                            .foregroundColor(.brandPrimary)
-                    })
-                    
-                    Button(action: {}, label: {
-                        Image(systemName: "person.crop.circle.fill.badge.xmark")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 60)
-                            .foregroundColor(.brandPrimary)
-                    })
+                    HStack(spacing: 20) {
+                        Button(action: {}, label: {
+                            Image(systemName: "location.circle.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 60)
+                                .foregroundColor(.brandPrimary)
+                        })
+                        
+                        Button(action: {}, label: {
+                            Image(systemName: "network")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 60)
+                                .foregroundColor(.brandPrimary)
+                        })
+                        
+                        Button(action: {}, label: {
+                            Image(systemName: "phone.circle.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 60)
+                                .foregroundColor(.brandPrimary)
+                        })
+                        
+                        Button(action: {}, label: {
+                            Image(systemName: "person.crop.circle.fill.badge.xmark")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 60)
+                                .foregroundColor(.brandPrimary)
+                        })
+                    }
                 }
                 
                 Spacer()
