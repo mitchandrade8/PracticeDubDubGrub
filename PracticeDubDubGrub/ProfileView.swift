@@ -11,6 +11,8 @@ struct ProfileView: View {
     
     @State private var profileBio : String = ""
     
+    var characterRemaining = 120
+    
     var body: some View {
         VStack {
             ZStack {
@@ -38,9 +40,7 @@ struct ProfileView: View {
             .padding(.horizontal)
             
             HStack {
-                HStack {
-                    
-                }
+                Text("Bio: \(characterRemaining) characters remain")
                 
                 Button {
                     
@@ -50,7 +50,6 @@ struct ProfileView: View {
                         .frame(width: 120, height: 30)
                         .background(Color.red)
                         .cornerRadius(8)
-//                    Label("Check Out", image: "mappin.and.ellipse")
                 }
             }
             
