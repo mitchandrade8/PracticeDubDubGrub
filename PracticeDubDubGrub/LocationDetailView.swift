@@ -75,15 +75,17 @@ struct LocationDetailView: View {
                 .bold()
                 .font(.title2)
             
-            LazyVGrid(columns: columns, content: {
-                FirstNameAvatarView(firstName: "User")
-                FirstNameAvatarView(firstName: "User")
-                FirstNameAvatarView(firstName: "User")
-                FirstNameAvatarView(firstName: "User")
-                FirstNameAvatarView(firstName: "User")
-                FirstNameAvatarView(firstName: "User")
-                FirstNameAvatarView(firstName: "User")
-            })
+            ScrollView {
+                LazyVGrid(columns: columns, content: {
+                    FirstNameAvatarView(firstName: "User")
+                    FirstNameAvatarView(firstName: "User")
+                    FirstNameAvatarView(firstName: "User")
+                    FirstNameAvatarView(firstName: "User")
+                    FirstNameAvatarView(firstName: "User")
+                    FirstNameAvatarView(firstName: "User")
+                    FirstNameAvatarView(firstName: "User")
+                })
+            }
             Spacer()
             
         }
