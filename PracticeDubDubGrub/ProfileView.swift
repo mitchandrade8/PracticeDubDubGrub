@@ -23,9 +23,10 @@ struct ProfileView: View {
                     .frame(height: 130)
                     .cornerRadius(12)
                 
-                HStack {
+                HStack(spacing: 20) {
                     ZStack {
                         AvatarView(size: 90)
+                        
                         Image(systemName: "square.and.pencil")
                             .resizable()
                             .scaledToFit()
@@ -33,17 +34,22 @@ struct ProfileView: View {
                             .foregroundColor(.white)
                             .offset(y: 32)
                     }
+                    .padding(.leading, 12)
                     
-                    VStack {
+                    VStack(spacing: 1) {
                         TextField("First Name", text: $firstName)
-//                        Text("Mitch Andrade")
-//                            .font(.system(size: 35, weight: .medium, design: .serif))
-//                        
-//                        Text("iOS Developer")
-//                            .font(.system(size: 20, weight: .light, design: .serif))
+                            .font(.system(size: 32, weight: .medium, design: .serif))
+                        
+                        TextField("Last Name", text: $lastName)
+                            .font(.system(size: 32, weight: .medium, design: .serif))
+                        
+                        TextField("Company Name", text: $companyName)
+                            .font(.system(size: 20, weight: .regular, design: .serif))
                             
                     }
+                    .padding(.trailing, 16)
                 }
+                .padding()
             }
             .padding(.horizontal)
             
