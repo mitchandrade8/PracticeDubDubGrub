@@ -53,23 +53,30 @@ struct ProfileView: View {
             }
             .padding(.horizontal)
             
-            HStack {
-                Text("Bio: \(characterRemaining) characters remain")
-                
-                Button {
-                    
-                } label: {
-                    Label("Check Out", systemImage: "mappin.and.ellipse")
-                        .foregroundColor(.white)
-                        .frame(width: 120, height: 30)
-                        .background(Color.red)
-                        .cornerRadius(8)
-                }
-            }
+//            HStack {
+//                Text("Bio: \(characterRemaining) characters remain")
+//                
+//                Button {
+//                    
+//                } label: {
+//                    Label("Check Out", systemImage: "mappin.and.ellipse")
+//                        .foregroundColor(.white)
+//                        .frame(width: 120, height: 30)
+//                        .background(Color.red)
+//                        .cornerRadius(8)
+//                }
+//            }
             
-            TextField("", text: $bio)
-                .border(Color.black)
-                .padding()
+            
+            
+            VStack(alignment: .leading) {
+                Text("Bio: 100 Characters Remain")
+                
+                TextEditor(text: $bio)
+                    .frame(height: 100)
+                    .padding()
+                .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.secondary, lineWidth: 1))
+            }
             
             Spacer()
         }
