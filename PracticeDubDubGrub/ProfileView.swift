@@ -9,30 +9,38 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @State private var profileBio : String = ""
+    @State private var firstName = ""
+    @State private var lastName = ""
+    @State private var companyName = ""
+    @State private var bio = ""
     
     var characterRemaining = 120
     
     var body: some View {
         VStack {
             ZStack {
-                Rectangle()
-                    .foregroundColor(.gray.opacity(0.5))
-                    .frame(height: 165)
+                Color(.secondarySystemBackground)
+                    .frame(height: 130)
                     .cornerRadius(12)
                 
                 HStack {
-                    AvatarView(size: 70)
+                    ZStack {
+                        AvatarView(size: 90)
+                        Image(systemName: "square.and.pencil")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 14, height: 14)
+                            .foregroundColor(.white)
+                            .offset(y: 32)
+                    }
                     
                     VStack {
-                        Text("Mitch Andrade")
-                            .font(.system(size: 35, weight: .medium, design: .serif))
-                        
-//                        Divider()
-//                            .frame(width: 200)
-                        
-                        Text("iOS Developer")
-                            .font(.system(size: 20, weight: .light, design: .serif))
+                        TextField("First Name", text: $firstName)
+//                        Text("Mitch Andrade")
+//                            .font(.system(size: 35, weight: .medium, design: .serif))
+//                        
+//                        Text("iOS Developer")
+//                            .font(.system(size: 20, weight: .light, design: .serif))
                             
                     }
                 }
@@ -53,7 +61,7 @@ struct ProfileView: View {
                 }
             }
             
-            TextField("", text: $profileBio)
+            TextField("", text: $bio)
                 .border(Color.black)
                 .padding()
             
