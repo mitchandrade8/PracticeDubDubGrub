@@ -16,6 +16,8 @@
 		74904A5D2AB8E63200C28294 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74904A5C2AB8E63200C28294 /* LocationListView.swift */; };
 		74904A5F2AB8E64400C28294 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74904A5E2AB8E64400C28294 /* ProfileView.swift */; };
 		74904A612ABB12E400C28294 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74904A602ABB12E400C28294 /* LocationDetailView.swift */; };
+		74904A632ABECA0A00C28294 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74904A622ABECA0A00C28294 /* LocationCell.swift */; };
+		74904A652ABECA8700C28294 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74904A642ABECA8700C28294 /* AvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		74904A5C2AB8E63200C28294 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		74904A5E2AB8E64400C28294 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		74904A602ABB12E400C28294 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		74904A622ABECA0A00C28294 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		74904A642ABECA8700C28294 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				74904A602ABB12E400C28294 /* LocationDetailView.swift */,
 				74904A5E2AB8E64400C28294 /* ProfileView.swift */,
 				74904A562AB8DDBC00C28294 /* Color+Ext.swift */,
+				74904A622ABECA0A00C28294 /* LocationCell.swift */,
+				74904A642ABECA8700C28294 /* AvatarView.swift */,
 				744B07232AB8C69300BBFB45 /* Assets.xcassets */,
 				744B07252AB8C69300BBFB45 /* Preview Content */,
 			);
@@ -160,6 +166,8 @@
 				74904A612ABB12E400C28294 /* LocationDetailView.swift in Sources */,
 				74904A592AB8E5DD00C28294 /* AppTabView.swift in Sources */,
 				74904A5F2AB8E64400C28294 /* ProfileView.swift in Sources */,
+				74904A632ABECA0A00C28294 /* LocationCell.swift in Sources */,
+				74904A652ABECA8700C28294 /* AvatarView.swift in Sources */,
 				74904A572AB8DDBC00C28294 /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

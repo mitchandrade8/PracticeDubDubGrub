@@ -53,22 +53,6 @@ struct ProfileView: View {
             }
             .padding(.horizontal)
             
-//            HStack {
-//                Text("Bio: \(characterRemaining) characters remain")
-//                
-//                Button {
-//                    
-//                } label: {
-//                    Label("Check Out", systemImage: "mappin.and.ellipse")
-//                        .foregroundColor(.white)
-//                        .frame(width: 120, height: 30)
-//                        .background(Color.red)
-//                        .cornerRadius(8)
-//                }
-//            }
-            
-            
-            
             VStack(alignment: .leading, spacing: 8) {
                 Text("Bio: ")
                     .font(.callout)
